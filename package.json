@@ -4,7 +4,8 @@
   "description": "Connect Whatsapp With Baileys Code Pairing",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "pair": "node index.js --pairing-code"
   },
   "keywords": [
     "baileys",
