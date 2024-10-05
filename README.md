@@ -1,6 +1,6 @@
 # How To Use?
 - Run cmd below
-```sh
+```
 $ npm i
 $ npm start
 ```
