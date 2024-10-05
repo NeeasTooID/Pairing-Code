@@ -9,7 +9,7 @@ const chalk = require("chalk")
 const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
 
-
+// Isi Pake Nomor Hp Yang Mau Di Jadikan Bot Sebelum Di Run!
 let phoneNumber = "916909137213"
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -17,7 +17,6 @@ const useMobile = process.argv.includes("--mobile")
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 const question = (text) => new Promise((resolve) => rl.question(text, resolve))
-
 
   async function qr() {
 //------------------------------------------------------
@@ -45,7 +44,6 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
       msgRetryCounterCache, // Resolve waiting messages
       defaultQueryTimeoutMs: undefined, // for this issues https://github.com/WhiskeySockets/Baileys/issues/276
    })
-
 
     // login use pairing code
    // source code https://github.com/WhiskeySockets/Baileys/blob/master/Example/example.ts#L61
@@ -80,6 +78,7 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
          console.log(chalk.black(chalk.bgGreen(`Your Pairing Code : `)), chalk.black(chalk.white(code)))
       }, 3000)
    }
+    
 //------------------------------------------------------
     XeonBotInc.ev.on("connection.update",async  (s) => {
         const { connection, lastDisconnect } = s
