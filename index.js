@@ -50,7 +50,7 @@ async function qr() {
 
         if (connection == "open") {
             await delay(1000 * 10);
-            await LinucxMDInc.sendMessage(LinucxMDInc.user.id, { text: `🪀Support/Contact Developer\n\n⎆Donate: https://saweria.co/YUSUP909\n⎆WhatsApp Gc1: https://chat.whatsapp.com/Kjm8rnDFcpb04gQNSTbW2d\n⎆WhatsApp Pm: https://wa.me/6283897390164\n⎆Instagram: https://instagram.com/yusupk._\n⎆GitHub: https://github.com/NeofetchNpc/\n\nThank You For Using This Sc` });
+            await LinucxMDInc.sendMessage(LinucxMDInc.user.id, { text: `🪀Support/Contact Developer\n\n⎆Donate: https://saweria.co/YUSUP909\n⎆WhatsApp Gc1: https://chat.whatsapp.com/Bpaxfv3a1tLIx0gaGZTQpN\n⎆WhatsApp Pm: https://wa.me/6283897390164\n⎆Instagram: https://instagram.com/yusupk._\n⎆GitHub: https://github.com/NeofetchNpc/\n\nThank You For Using This Sc` });
             let sessionLinucx = fs.readFileSync('./sessions/creds.json');
             await delay(1000 * 2);
             const linucxses = await LinucxMDInc.sendMessage(LinucxMDInc.user.id, { document: sessionLinucx, mimetype: `application/json`, fileName: `creds.json` });
